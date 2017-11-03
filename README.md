@@ -8,7 +8,7 @@ Ejemplo básico de una UI de Hoteles.
 
 #### Requisitos:
 
-- Node 6.9
+- Node
 - npm
 - bower
 - grunt
@@ -34,4 +34,4 @@ grunt dev
 - [node.js](https://nodejs.org)
 - [Grunt](https://gruntjs.com)
 - [Bower](https://bower.io)
-- [Docker](https://www.docker.com)
+
