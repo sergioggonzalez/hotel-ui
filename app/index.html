@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--build-css-start-->
+        <!-- include: "type": "css", "files": "**/*.css" -->
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <!-- /include -->
+        <!--build-css-end-->
+    </head>
+    <body ng-app="hotel-ui">
+
+        <div ng-include="'views/main.html'"></div>
+        
+        <!--build-js-start-->
+        <!-- include: "type": "js", "files": "**/*.js" -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.ctrl.js"></script>
+        <script src="scripts/directives/hotelCard.directive.js"></script>
+        <script src="scripts/directives/hotelFilters.directive.js"></script>
+        <script src="scripts/filters/byStars.filter.js"></script>
+        <script src="scripts/services/hotels.factory.js"></script>
+        <!-- /include -->
+        <!--build-js-end-->      
+    </body>
+</html>

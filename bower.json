@@ -1,0 +1,23 @@
+{
+  "name": "hotel-ui",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sergio Gonzalez <gonzalezsg82@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "registry": "https://bower.herokuapp.com",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.5",
+    "jquery-ui": "^1.12.1"
+  }
+}

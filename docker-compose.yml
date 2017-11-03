@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  ui:
+    build: ./docker/.
+    container_name: hotels-ui
+    volumes:
+     - .:/usr/src/app/
+    ports:
+     - "8080:8080"

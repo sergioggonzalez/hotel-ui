@@ -1,0 +1,17 @@
+<div class="container" ng-controller="MainCtrl">
+        <header>
+                <img width="200px" src="https://images.almundo.com/205/image/upload/q_auto/v1507738614/home-v3/headerv3/logo-almundo_3x.png" />
+        </header>
+           
+    <div class="col-md-4 col-sm-4">
+        <hotel-filters hotels="hotels" hotels-cache="hotelsCache"></hotel-filters>
+    </div>
+
+    <div class="col-md-8 col-sm-8">
+        <hotel-card hotel="hotel" ng-repeat="hotel in hotels"></hotel-card>
+
+        <div ng-if="hotelsError" class="alert alert-danger" role="alert">
+            Ups, hubo un error al cargar los hoteles
+        </div>
+    </div>
+</div>

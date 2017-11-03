@@ -1,0 +1,68 @@
+<div class="row hotel-filters">
+    <div class="hotel-filter filter-by-name">
+        <p class="hotel-filter-title">Filtros</p>
+
+        
+    </div>
+    <div class="hotel-filter filter-by-name">
+        <p class="hotel-filter-title"><i class="fa fa-search" aria-hidden="true"></i> Nombre de hotel</p>
+
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="hotelFilterByName" placeholder="Ingrese nombre del hotel" ng-model="hotelNameSearch">
+            </div>
+            <button class="btn btn-default" ng-click="applyFilters(hotelNameSearch)">Aceptar</button>
+        </form>
+    </div>
+    <div class="hotel-filter filter-by-stars">
+        <p class="hotel-filter-title"><i class="fa fa-star" aria-hidden="true"></i> Estrellas</p>
+
+        <form class="form-horizontal">
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" ng-model="stars.all" ng-click="applyFilters()"> Todas las estrellas
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" ng-model="stars.five" ng-click="applyFilters()"> 
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" ng-model="stars.four" ng-click="applyFilters()"> 
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" ng-model="stars.three" ng-click="applyFilters()"> 
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" ng-model="stars.two" ng-click="applyFilters()"> 
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" ng-model"stars.one" ng-click="applyFilters()"> 
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    </label>
+                </div>
+        </form>
+    </div>
+</div>
